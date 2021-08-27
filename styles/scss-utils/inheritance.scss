@@ -1,0 +1,97 @@
+// Buttons components
+
+%buttonSizeLarge {
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+%buttonSizeMedium {
+  height: 41px;
+  line-height: 41px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+%buttonSizeSemi {
+  height: 50px;
+  line-height: 51px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+%buttonSizeSmall {
+  height: 26px;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+%buttonPaddingLarge {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+%buttonPaddingSmall {
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+%buttonTheme {
+  text-align: center;
+  background: $theme_gradient;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-size: 100%;
+  transition: background-size 0.3s ease 0s;
+  &:hover {
+    color: #fff;
+    background-size: 200%;
+  }
+}
+
+%buttonNoLine {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+// Forms element
+
+%inputLight {
+  background: #fff;
+  color: #747474;
+
+  &:focus {
+    border-color: #146c43;
+    -webkit-box-shadow: 0 0 0 0.25rem rgb(60 153 110 / 50%);
+    box-shadow: 0 0 0 0.25rem rgb(60 153 110 / 50%);
+  }
+}
+
+%inputLarge {
+  @extend %buttonSizeLarge;
+  font-weight: 400;
+}
+
+%clearInput {
+  outline: none;
+  box-shadow: none;
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+// after/before content
+%beforeDefault {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}

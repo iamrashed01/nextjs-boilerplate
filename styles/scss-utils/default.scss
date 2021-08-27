@@ -1,0 +1,114 @@
+@import './marginpadding.scss';
+
+.noCursor{
+  cursor: default;
+}
+.cursorPointer{
+  cursor: pointer;
+}
+
+// Font size
+.font14{
+  font-size: 14px;
+}
+
+// colors
+.themeColor{
+  color: $theme_color;
+}
+
+// border radius
+.round{
+  border-radius: 4px;
+}
+.round--sm{
+  border-radius: 6px;
+}
+.round--md{
+  border-radius: 8px;
+}
+.round--lg{
+  border-radius: 12px;
+}
+.round--xl{
+  border-radius: 15px;
+}
+
+// box shadow
+.shadow{
+  box-shadow: 0 0 15px rgb(0 0 0 / 1%);
+}
+.shadow--sm{
+  box-shadow: 0 0 15px rgb(0 0 0 / 3%);
+}
+.shadow--md{
+  box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+}
+.shadow--lg{
+  box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 5%);
+}
+.shadow--xs{
+  box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+
+// position
+.relative{
+  position: relative;
+}
+
+.vh-center{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center-center{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// z index
+.z1{
+  z-index: 1;
+}
+.z--1{
+  z-index: -1;
+}
+
+// custom padding
+.ptb-50{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.ptb-60{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.ptb-70{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.ptb-80{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.ptb-100{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+// text color
+.textMute{
+  color: #B5B5B5;
+}
+.textDark{
+  color: #000000;
+}
+.textTheme{
+  color: $theme_color;
+}
+
+// height
+.f-full{
+  height: 100%;
+}

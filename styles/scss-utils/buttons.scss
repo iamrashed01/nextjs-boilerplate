@@ -1,0 +1,33 @@
+.cbtnTheme {
+  @extend .round--md;
+  letter-spacing: 0;
+
+  @extend %buttonTheme;
+  @extend %buttonNoLine;
+  @extend %buttonPaddingLarge;
+
+  &:not(.cbtnTheme--medium):not(.cbtnTheme--small):not(.cbtnTheme--semi) {
+    @extend %buttonSizeLarge;
+  }
+
+  &.cbtnTheme--medium {
+    @extend %buttonSizeMedium;
+  }
+
+  &.cbtnTheme--semi {
+    @extend %buttonSizeSemi;
+  }
+
+  &.cbtnTheme--small {
+    @extend %buttonSizeSmall;
+    @extend %buttonPaddingSmall;
+  }
+}
+
+.cbtnTheme--onlyTheme {
+  letter-spacing: 0;
+  @extend .round--md;
+
+  @extend %buttonTheme;
+  @extend %buttonNoLine;
+}
